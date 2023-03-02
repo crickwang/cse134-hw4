@@ -1,0 +1,30 @@
+#add
+{
+    background-image: url('images/add.jpg');
+    color:rgb(255,0,0); 
+    border-radius: 15%; 
+    border: 2px solid gray; 
+    background-color: bisque !important;
+    height: 30px;
+    width: 100px;
+}
+
+#remove
+{
+    color:rgb(0,155,0); 
+    border-radius: 15%; 
+    border: 2px solid black; 
+    background-color: bisque;
+    height: 30px;
+    width: 150px;
+}
+
+#edit
+{
+    color:rgb(0,0,255); 
+    border-radius: 15%; 
+    border: 2px solid transparent; 
+    background-color: bisque;
+    height: 30px;
+    width: 100px;
+}
