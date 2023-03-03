@@ -1,3 +1,5 @@
-Third-year computer science student at University of California San Diego. Experienced with machine learning algorithms, deep learning methods, and software design.
+Yifei Wang 
+A16278459
+https://guileless-swan-c14aca.netlify.app/
 
 
