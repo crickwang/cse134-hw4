@@ -7,6 +7,7 @@
 	<meta name="keywords" content="HTML" />
 	<meta name="author" content="Yifei Wang" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="main.js" type="module"></script>
 	<link href="images/ucsd.gif" rel="gif"/>
 	<title>Yifei Wang</title>
 	<link rel="stylesheet" href="main.css">
@@ -21,7 +22,7 @@
 		<hr>
 		<h1>YIFEI WANG</h1>
 		<section class="intro">
-			<p style="text-align:center;">
+			<p style="text-align:center;"><strong>
 				Email: yifeiwang.working@gmail.com
 				<br>
 				Contact Info: (+1) (858)-539-6611
@@ -30,6 +31,7 @@
 				<br>
 				Address: 3737 Nobel Drive, Apartment 2316, San Diego, CA 92122, USA
 				<br>
+			</strong>
 			</p>
 	</section>
 		
@@ -37,16 +39,13 @@
 	</header>
 
 	<main>
-		<h2>SUMMARY</h2>
+		<h2 style="color: red; background-color: green;">SUMMARY</h2>
 		<section class="text">
-			<p>
+			<p id="sum">
 				A <b>computer science and engineering</b> bachelor candidate,
 				with <em>2 years</em> of learning experience in data science and software engineering 
 				and proficiency in using Java, C, C++, Python, and SQL.
-				<br><br>
-				<span id="annotation">
-					there will be more summary!
-				</span>
+
 			</p>
 			<figure id="figure2">
 				<img id="self-image" src="images/pic.jpg" alt="an offensive meme" title="rabbit">
@@ -56,7 +55,7 @@
 
 		<hr>
 
-		<h2>EDUCATION</h2>
+		<h2 style="color: blue; background-color: orange;">EDUCATION</h2>
 		<section class="edu">
 			<h3>University of California San Diego</h3>
 			<ol>
@@ -68,60 +67,76 @@
 				</li>
 
 				<li>
-					<details>
-						<summary><strong>CSE100:</strong> Advanced Data Structures</summary>
-						<p id="text-100">
-							sophisticated description of multiple data structures in computer science, including tree, hash, and searching algorithms. 
-							Compared with my counterparts, I can proficiently utilize appropriate algorithms to achieve the same functionality in less time and with less complexity. 
-						</p>
-					</details>
-				</li>
-
-				<li>
-					<details>
-						<summary><strong>CSE150B:</strong> Intro to deep learning</summary>
-						<p id="text-150B">
-							Implementation of A* searching algorithm, Markov decision tree, Monte Carlo simulation, and other deep learning methods. 
-							Few of my counterparts have experience in writing learning small games, 
-							including 2048 or blackjack, and I have an advantage over them by having these valuable experiences.
-						</p>
-					</details>
+					Past course experiences <a href="https://catalog.ucsd.edu/courses/CSE.html">CSE</a> and <a href="https://catalog.ucsd.edu/courses/MATH.html">MATH</a>
+					<ul>
+						<li>
+							<details>
+								<summary><strong>CSE150B:</strong> <a href="https://courses.ucsd.edu/coursemain.aspx?section=77479">Intro to deep learning</a></summary>
+								<p id="text-150B">
+									Implementation of A* searching algorithm, Markov decision tree, Monte Carlo simulation, and other deep learning methods. 
+									Few of my counterparts have experience in writing learning small games, 
+									including 2048 or blackjack, and I have an advantage over them by having these valuable experiences.
+								</p>
+							</details>
+						</li>
+						<li>
+							<details>
+								<summary><strong>CSE100:</strong> <a href="https://cseweb.ucsd.edu/classes/sp20/cse100-c/">Advanced Data Structures</a></summary>
+								<p id="text-100">
+									sophisticated description of multiple data structures in computer science, including tree, hash, and searching algorithms. 
+									Compared with my counterparts, I can proficiently utilize appropriate algorithms to achieve the same functionality in less time and with less complexity. 
+								</p>
+							</details>
+						</li>
+						<li>
+							<details>
+								<summary><strong>CSE151A:</strong> <a href="https://cseweb.ucsd.edu/classes/wi21/cse151A-a/">Introduction to Machine Learning</a></summary>
+								<p id="text-151A">
+									Broad introduction to machine learning. The topics include some topics in supervised learning, such as k-nearest neighbor classifiers, decision trees, boosting, and perceptrons; 
+									and topics in unsupervised learning, such as k-means and hierarchical clustering. In addition to the actual algorithms, the course focuses on the principles behind the algorithms. 
+								</p>
+							</details>
+						</li>
+						<li>
+							<details>
+								<summary><strong>CSE158:</strong> <a href="https://cseweb.ucsd.edu/classes/fa19/cse158-a/">Recommender Systems and Web Mining </a></summary>
+								<p id="text-158">
+									Current methods for data mining and predictive analytics. Emphasis is on studying real-world data sets, building working systems, 
+									and putting current ideas from machine learning research into practice.
+								</p>
+							</details>
+						</li>
+						<li>
+							<details>
+								<summary><strong>CSE250A:</strong> <a href="https://cseweb.ucsd.edu/classes/fa19/cse250A-a/">Principles of Artificial Intelligence: Probabilistic Reasoning and Learning</a></summary>
+								<p id="text-250">
+									Methods based on probability theory for reasoning and learning under uncertainty. Content may include directed and undirected probabilistic graphical models, 
+									exact and approximate inference, latent variables, expectation-maximization, hidden Markov models, Markov decision processes, applications to vision, robotics, speech, and/or text.
+								</p>
+							</details>
+						</li>
+					</ul>
 				</li>
 			</ol>
-			<br>
-			<p>A list of past course experiences</p>
-			<form>
-				<label for="courses">Choose a course:</label>
-				<select name="courses" id="courses">
-				  <optgroup label="CSE">
-					<option>CSE100</option>
-					<option>CSE150B</option>
-					<option>CSE151A</option>
-					<option>CSE158</option>
-					<option>CSE132A</option>
-				  </optgroup>
-				</select>
-				<br>
-			  </form>
 		</section>
 		<br><hr>
-		<h2>SKILLS</h2>
+		<h2 style="color: green; background-color: red;">SKILLS</h2>
 		<section class="skills">
 			<ul>
 				<li>
-					<strong>Machine Learning:</strong> 
+					<a href="https://en.wikipedia.org/wiki/Machine_learning"><div><strong>Machine Learning:</strong> </div></a>
 					Well-versed in manipulating multiple machine learning algorithms including KNN, L1&L2 regularization, and gradient optimization. 
 				</li>
 				<li>
-					<strong>Algorithms:</strong>
+					<a href="https://en.wikipedia.org/wiki/Algorithm"><div><strong>Algorithms</strong></div></a>
 					Proficient in multiple searching algorithms including Dijkstra, A*, and quick sort.
 				</li>
 				<li>
-					<strong>Reinforcement Learning:</strong> 
+					<a href="https://en.wikipedia.org/wiki/Reinforcemnt_Learning"><div><strong>Reinforcement Learning</strong> </div></a>
 					mastered in manipulating multiple deep learning algorithms including reinforcement learning, Q-learning, and Markov decision tree.
 				</li>
 				<li>
-					<strong>Data Management:</strong> 
+					<a href="https://en.wikipedia.org/wiki/Data_management"><div><strong>Data Management</strong>  </a></div>
 					capable of understanding SQL statements and processing data using SQL commands.
 				</li>
 			</ul>
@@ -137,18 +152,16 @@
 		<br>
 		<textarea id="box" name="birthday" rows="5">recommendations:</textarea>
 		<br>
-		<input id="submit" type="submit" value="Submit">
+		<button id="submit">submit</button>
 		<br>
+		<ul class="past feedbacks" id="feed_list"></ul>
 	</section>
 
 	<footer>
 		<hr/>
 		<p>This page was made by Yifei Wang, all rights reserved</p>
 		<p>link to <a href="https://ucsd.edu">UCSD</a> and Triton <a href="http://tritonlink.ucsd.edu">TritonLink</a></p>
-		<a id = "link-of-button" href="#button">don't click!!!</a>
-		<div id="button">
-			<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">my real personal webpage is here</a>
-		</div>
+		<button id="meme" style="color: violet;" onclick="jump()">don't click me!!!</button>
 	</footer>
 	<script type="module">
 		import { update } from './scripts/main.js';
